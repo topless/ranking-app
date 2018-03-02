@@ -9,6 +9,7 @@
     "gulp-load-plugins": "1.5.0",
     "gulp-plumber": "1.2.0",
     "gulp-sequence": "1.0.0",
+    "gulp-shell": "^0.6.5",
     "gulp-size": "3.0.0",
     "gulp-start": "1.0.1",
     "gulp-watch": "5.0.0",

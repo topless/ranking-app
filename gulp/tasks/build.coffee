@@ -16,7 +16,16 @@ gulp.task 'rebuild',
   $.sequence 'reset', 'build'
 
 
-gulp.task 'deploy', 'Deploy project to Google App Engine.', ['build'], ->
+gulp.task 'build_frontend',
+  $.shell.task([
+    'rm ../main/templates/index.html'
+    'rm -rf ../main/static/dist'
+    'npm run build',
+    'mv dist/index.html ../main/templates'
+    'mv dist ../main/static'
+  ], cwd: 'frontend')
+
+gulp.task 'deploy', 'Deploy project to Google App Engine.', ['build', 'build_frontend'], ->
   options = yargs process.argv, configuration:
     'boolean-negation': false
     'camel-case-expansion': false

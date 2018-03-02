@@ -7,17 +7,11 @@ import config
 from main import app
 
 
-###############################################################################
-# Welcome
-###############################################################################
 @app.route('/')
 def welcome():
-  return flask.render_template('welcome.html', html_class='welcome')
+  return flask.render_template('index.html', html_class='welcome')
 
 
-###############################################################################
-# Sitemap stuff
-###############################################################################
 @app.route('/sitemap.xml')
 def sitemap():
   response = flask.make_response(flask.render_template(
@@ -28,10 +22,6 @@ def sitemap():
   return response
 
 
-###############################################################################
-# Warmup request
-###############################################################################
 @app.route('/_ah/warmup')
 def warmup():
-  # TODO: put your warmup code here
   return 'success'
