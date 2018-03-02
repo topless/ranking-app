@@ -1,13 +1,18 @@
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <router-link to="hello">HelloWorld</router-link>
+    <ul>
+      <li>first item</li>
+      <li>item number two</li>
+      <li>more items</li>
+    </ul>
+    <router-link to="hello">back to World</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DivisionList',
+  name: 'This is a list example',
   data () {
     return {
       title: 'A list of all divisions'

@@ -4,11 +4,6 @@ from __future__ import absolute_import
 
 import flask_restful
 
-from api import helpers
-import auth
-import config
-import model
-
 from main import api_v1
 
 
