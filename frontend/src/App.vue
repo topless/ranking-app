@@ -6,8 +6,21 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  // Fetches posts when the component is created.
+  created() {
+    axios.get('api/v1/sample')
+      .then(response => {
+        console.log('Got it ', response.data)
+      })
+      .catch(e => {
+        console.err(e)
+      })
+  }
 }
 </script>
 

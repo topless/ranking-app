@@ -1,10 +1,7 @@
 paths =
   main: 'main'
-
   dep: {}
   py: {}
-  static: {}
-  src: {}
   temp: {}
 
 paths.temp.root = 'temp'

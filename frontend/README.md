@@ -1,6 +1,6 @@
 # frontend
 
-> Front end for athletes rankings
+> Front end for ranks
 
 ## Build Setup
 
