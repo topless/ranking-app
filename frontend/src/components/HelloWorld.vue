@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link to="/">A list example</router-link>
+    <router-link to="/">A list example is it updating?</router-link>
     <h2>Essential Links</h2>
     <ul>
       <li>

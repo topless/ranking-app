@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import DivisionList from '@/components/DivisionList'
+import HelloList from '@/components/HelloList'
 import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'DivisionList',
-      component: DivisionList
+      name: 'HelloList',
+      component: HelloList
     },
     {
       path: '/hello',
