@@ -12,3 +12,4 @@ main/static/dist
 main/templates/index.html
 node_modules
 temp/
+!.gitkeep
