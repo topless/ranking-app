@@ -1,21 +1,22 @@
 <template>
   <div>
-    <h2>{{ title }}</h2>
+    <img src="../assets/UFC_logo.svg">
+    <h2>{{ msg }}</h2>
     <ul>
       <li>first item</li>
       <li>item number two</li>
       <li>more items</li>
     </ul>
-    <router-link to="hello">back to World</router-link>
+    <router-link :to="{ name: 'DivisionRanks'}">Ranks</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'This is a list example',
+  name: 'DivisionRanks',
   data () {
     return {
-      title: 'A list of all divisions'
+      msg: 'A list of all UFC divisions'
     }
   }
 }
