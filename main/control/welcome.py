@@ -6,6 +6,12 @@ import config
 
 from main import app
 
+"""
+NOTE: This will throw an error if there is no index.html, which is generated
+with gulp build_frontend. The call to the server should be used only in production,
+for development npm run dev inside frontend directory.
+"""
+
 
 @app.route('/')
 def welcome():
