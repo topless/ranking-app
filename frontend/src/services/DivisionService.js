@@ -1,4 +1,4 @@
-import { HTTP } from './BaseService'
+import { API } from './BaseService'
 
 class DivisionService {
   constructor() {
@@ -11,7 +11,7 @@ class DivisionService {
         return resolve(this.divisions)
       }
 
-      HTTP.get('division/')
+      API.get('division/')
         .then(resp => {
           this.divisions = resp.data.result.sort(function(a, b) {
             return b.weight - a.weight
