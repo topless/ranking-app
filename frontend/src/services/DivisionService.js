@@ -3,6 +3,7 @@ import { API } from './BaseService'
 class DivisionService {
   constructor() {
     this.divisions = []
+    this.p4p = {}
   }
 
   get() {
@@ -13,9 +14,9 @@ class DivisionService {
 
       API.get('division/')
         .then(resp => {
-          this.divisions = resp.data.result.sort(function(a, b) {
-            return b.weight - a.weight
-          })
+          this.divisions = resp.data.result.sort((a, b) => { return b.weight - a.weight })
+          this.p4p = this.divisions.pop()
+          // this.divisions.reverse()
           return resolve(this.divisions)
         })
         .catch(e => {

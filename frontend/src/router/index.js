@@ -13,7 +13,7 @@ export default new Router({
       component: DivisionList
     },
     {
-      path: '/ranks',
+      path: '/ranks/:name',
       name: 'DivisionRanks',
       component: DivisionRanks
     }
